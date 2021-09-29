@@ -17,6 +17,7 @@
 		0476B1E22704BCC40088EC57 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0476B1BA2704BCC00088EC57 /* ContentView.swift */; };
 		0476B1E32704BCC40088EC57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0476B1BB2704BCC30088EC57 /* Assets.xcassets */; };
 		0476B1E42704BCC40088EC57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0476B1BB2704BCC30088EC57 /* Assets.xcassets */; };
+		0476B1F62704C0E90088EC57 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0476B1F52704C0E90088EC57 /* CloudKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,8 @@
 		0476B1D72704BCC40088EC57 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0476B1DB2704BCC40088EC57 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		0476B1DD2704BCC40088EC57 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		0476B1F32704BE580088EC57 /* DubDubGrub2 (iOS).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "DubDubGrub2 (iOS).entitlements"; sourceTree = "<group>"; };
+		0476B1F52704C0E90088EC57 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0476B1F62704C0E90088EC57 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,10 +89,12 @@
 		0476B1B32704BCC00088EC57 = {
 			isa = PBXGroup;
 			children = (
+				0476B1F32704BE580088EC57 /* DubDubGrub2 (iOS).entitlements */,
 				0476B1B82704BCC00088EC57 /* Shared */,
 				0476B1CE2704BCC30088EC57 /* Tests iOS */,
 				0476B1DA2704BCC40088EC57 /* Tests macOS */,
 				0476B1C12704BCC30088EC57 /* Products */,
+				0476B1F42704C0E90088EC57 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -129,6 +135,14 @@
 				0476B1DD2704BCC40088EC57 /* Tests_macOSLaunchTests.swift */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		0476B1F42704C0E90088EC57 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0476B1F52704C0E90088EC57 /* CloudKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -453,8 +467,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "DubDubGrub2 (iOS).entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2H8H3AS73K;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -482,6 +498,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "DubDubGrub2 (iOS).entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
