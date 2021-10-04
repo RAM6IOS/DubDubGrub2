@@ -11,6 +11,7 @@ import SwiftUI
 struct AppTabView: View {
     
     var body: some View {
+       
         TabView{
             LocationMapView()
                 .tabItem {
@@ -27,6 +28,7 @@ struct AppTabView: View {
                     Label("Profile", systemImage: "person")
                 }
         }
+        .background(Color.gray)
         .accentColor(.brandPrimary)
         
     }

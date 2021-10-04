@@ -8,13 +8,18 @@
 import SwiftUI
 
 struct ProfileView: View {
+    @State var name = "Ramzi"
     var body: some View {
-        Text("ProfileView")
+                TextField("Name's placeholder", text: $name)
+                           .padding()
+                            .background(Color(.systemGray6))
+                            .cornerRadius(5.0)
     }
 }
 
 struct ProfileView_Previews: PreviewProvider {
     static var previews: some View {
         ProfileView()
+            .preferredColorScheme(.dark)
     }
 }

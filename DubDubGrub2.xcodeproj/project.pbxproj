@@ -13,8 +13,6 @@
 		0476B1DE2704BCC40088EC57 /* Tests_macOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0476B1DD2704BCC40088EC57 /* Tests_macOSLaunchTests.swift */; };
 		0476B1DF2704BCC40088EC57 /* DubDubGrub2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0476B1B92704BCC00088EC57 /* DubDubGrub2App.swift */; };
 		0476B1E02704BCC40088EC57 /* DubDubGrub2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0476B1B92704BCC00088EC57 /* DubDubGrub2App.swift */; };
-		0476B1E12704BCC40088EC57 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0476B1BA2704BCC00088EC57 /* ContentView.swift */; };
-		0476B1E22704BCC40088EC57 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0476B1BA2704BCC00088EC57 /* ContentView.swift */; };
 		0476B1E32704BCC40088EC57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0476B1BB2704BCC30088EC57 /* Assets.xcassets */; };
 		0476B1E42704BCC40088EC57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0476B1BB2704BCC30088EC57 /* Assets.xcassets */; };
 		0476B1F62704C0E90088EC57 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0476B1F52704C0E90088EC57 /* CloudKit.framework */; };
@@ -49,7 +47,6 @@
 
 /* Begin PBXFileReference section */
 		0476B1B92704BCC00088EC57 /* DubDubGrub2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DubDubGrub2App.swift; sourceTree = "<group>"; };
-		0476B1BA2704BCC00088EC57 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0476B1BB2704BCC30088EC57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0476B1C02704BCC30088EC57 /* DubDubGrub2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DubDubGrub2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0476B1C62704BCC30088EC57 /* DubDubGrub2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DubDubGrub2.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -117,7 +114,6 @@
 			isa = PBXGroup;
 			children = (
 				0476B1B92704BCC00088EC57 /* DubDubGrub2App.swift */,
-				0476B1BA2704BCC00088EC57 /* ContentView.swift */,
 				0476B1BB2704BCC30088EC57 /* Assets.xcassets */,
 				0476B1F72704CE3E0088EC57 /*  Color+Ext..swift */,
 				0476B1FA2704CE880088EC57 /* AppTabView.swift */,
@@ -323,7 +319,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0476B1E12704BCC40088EC57 /* ContentView.swift in Sources */,
 				0476B1DF2704BCC40088EC57 /* DubDubGrub2App.swift in Sources */,
 				0476B1FE2704CEB40088EC57 /* LocationMapView.swift in Sources */,
 				0476B2012704D0280088EC57 /* LocationListView.swift in Sources */,
@@ -337,7 +332,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0476B1E22704BCC40088EC57 /* ContentView.swift in Sources */,
 				0476B1E02704BCC40088EC57 /* DubDubGrub2App.swift in Sources */,
 				0476B1FF2704CEB40088EC57 /* LocationMapView.swift in Sources */,
 				0476B2022704D0280088EC57 /* LocationListView.swift in Sources */,
