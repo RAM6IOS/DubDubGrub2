@@ -137,6 +137,8 @@ struct LocationDerail_Previews: PreviewProvider {
                     
                 }
             }
+
+
             struct VaterImageView: View {
                 var size: CGFloat
                 var name: String
