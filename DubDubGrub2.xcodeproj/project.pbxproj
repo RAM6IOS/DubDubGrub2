@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0446F6EE2710290100E7860F /* LocationCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0446F6ED2710290100E7860F /* LocationCall.swift */; };
+		0446F6EF2710290100E7860F /* LocationCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0446F6ED2710290100E7860F /* LocationCall.swift */; };
+		0446F6F127102B4C00E7860F /* AvaterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0446F6F027102B4C00E7860F /* AvaterView.swift */; };
+		0446F6F227102B4C00E7860F /* AvaterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0446F6F027102B4C00E7860F /* AvaterView.swift */; };
+		0446F6F42710A7CF00E7860F /* ProfileNameText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0446F6F32710A7CF00E7860F /* ProfileNameText.swift */; };
+		0446F6F52710A7CF00E7860F /* ProfileNameText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0446F6F32710A7CF00E7860F /* ProfileNameText.swift */; };
+		0446F6F72710A96900E7860F /* View+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0446F6F62710A96900E7860F /* View+Ext.swift */; };
+		0446F6F82710A96900E7860F /* View+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0446F6F62710A96900E7860F /* View+Ext.swift */; };
+		0446F6FA2710AC2C00E7860F /* DubButoen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0446F6F92710AC2C00E7860F /* DubButoen.swift */; };
+		0446F6FB2710AC2C00E7860F /* DubButoen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0446F6F92710AC2C00E7860F /* DubButoen.swift */; };
 		0476B1D02704BCC30088EC57 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0476B1CF2704BCC30088EC57 /* Tests_iOS.swift */; };
 		0476B1D22704BCC30088EC57 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0476B1D12704BCC30088EC57 /* Tests_iOSLaunchTests.swift */; };
 		0476B1DC2704BCC40088EC57 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0476B1DB2704BCC40088EC57 /* Tests_macOS.swift */; };
@@ -48,6 +58,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0446F6ED2710290100E7860F /* LocationCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCall.swift; sourceTree = "<group>"; };
+		0446F6F027102B4C00E7860F /* AvaterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AvaterView.swift; path = Cells/AvaterView.swift; sourceTree = "<group>"; };
+		0446F6F32710A7CF00E7860F /* ProfileNameText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileNameText.swift; path = Cells/ProfileNameText.swift; sourceTree = "<group>"; };
+		0446F6F62710A96900E7860F /* View+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Ext.swift"; sourceTree = "<group>"; };
+		0446F6F92710AC2C00E7860F /* DubButoen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DubButoen.swift; path = Cells/DubButoen.swift; sourceTree = "<group>"; };
 		0476B1B92704BCC00088EC57 /* DubDubGrub2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DubDubGrub2App.swift; sourceTree = "<group>"; };
 		0476B1BB2704BCC30088EC57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0476B1C02704BCC30088EC57 /* DubDubGrub2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DubDubGrub2.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,6 +116,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0446F6FC2710F42900E7860F /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				0446F6F62710A96900E7860F /* View+Ext.swift */,
+				0476B1F72704CE3E0088EC57 /*  Color+Ext..swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		0446F6FD2710F47700E7860F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0446F7012710FC0A00E7860F /* CostemView */,
+				0446F6FF2710F59900E7860F /* Cells */,
+				0446F6FE2710F49400E7860F /* Screens */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0446F6FE2710F49400E7860F /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				0476B2032704D03B0088EC57 /* ProfileView.swift */,
+				0476B2002704D0280088EC57 /* LocationListView.swift */,
+				0476B1FD2704CEB40088EC57 /* LocationMapView.swift */,
+				04C58618270B9B150004AC4F /* LocationDerail.swift */,
+				0476B1FA2704CE880088EC57 /* AppTabView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		0446F6FF2710F59900E7860F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				0446F6ED2710290100E7860F /* LocationCall.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		0446F7012710FC0A00E7860F /* CostemView */ = {
+			isa = PBXGroup;
+			children = (
+				0446F6F027102B4C00E7860F /* AvaterView.swift */,
+				0446F6F32710A7CF00E7860F /* ProfileNameText.swift */,
+				0446F6F92710AC2C00E7860F /* DubButoen.swift */,
+			);
+			name = CostemView;
+			sourceTree = "<group>";
+		};
 		0476B1B32704BCC00088EC57 = {
 			isa = PBXGroup;
 			children = (
@@ -116,14 +180,10 @@
 		0476B1B82704BCC00088EC57 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				0446F6FD2710F47700E7860F /* Views */,
+				0446F6FC2710F42900E7860F /* Extension */,
 				0476B1B92704BCC00088EC57 /* DubDubGrub2App.swift */,
 				0476B1BB2704BCC30088EC57 /* Assets.xcassets */,
-				0476B1F72704CE3E0088EC57 /*  Color+Ext..swift */,
-				0476B1FA2704CE880088EC57 /* AppTabView.swift */,
-				0476B1FD2704CEB40088EC57 /* LocationMapView.swift */,
-				0476B2002704D0280088EC57 /* LocationListView.swift */,
-				0476B2032704D03B0088EC57 /* ProfileView.swift */,
-				04C58618270B9B150004AC4F /* LocationDerail.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -325,10 +385,15 @@
 			files = (
 				0476B1DF2704BCC40088EC57 /* DubDubGrub2App.swift in Sources */,
 				0476B1FE2704CEB40088EC57 /* LocationMapView.swift in Sources */,
+				0446F6EE2710290100E7860F /* LocationCall.swift in Sources */,
 				0476B2012704D0280088EC57 /* LocationListView.swift in Sources */,
 				04C58619270B9B150004AC4F /* LocationDerail.swift in Sources */,
+				0446F6F42710A7CF00E7860F /* ProfileNameText.swift in Sources */,
+				0446F6FA2710AC2C00E7860F /* DubButoen.swift in Sources */,
 				0476B1FB2704CE880088EC57 /* AppTabView.swift in Sources */,
+				0446F6F72710A96900E7860F /* View+Ext.swift in Sources */,
 				0476B2042704D03B0088EC57 /* ProfileView.swift in Sources */,
+				0446F6F127102B4C00E7860F /* AvaterView.swift in Sources */,
 				0476B1F82704CE3E0088EC57 /*  Color+Ext..swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,10 +404,15 @@
 			files = (
 				0476B1E02704BCC40088EC57 /* DubDubGrub2App.swift in Sources */,
 				0476B1FF2704CEB40088EC57 /* LocationMapView.swift in Sources */,
+				0446F6EF2710290100E7860F /* LocationCall.swift in Sources */,
 				0476B2022704D0280088EC57 /* LocationListView.swift in Sources */,
 				04C5861A270B9B150004AC4F /* LocationDerail.swift in Sources */,
+				0446F6F52710A7CF00E7860F /* ProfileNameText.swift in Sources */,
+				0446F6FB2710AC2C00E7860F /* DubButoen.swift in Sources */,
 				0476B1FC2704CE880088EC57 /* AppTabView.swift in Sources */,
+				0446F6F82710A96900E7860F /* View+Ext.swift in Sources */,
 				0476B2052704D03B0088EC57 /* ProfileView.swift in Sources */,
+				0446F6F227102B4C00E7860F /* AvaterView.swift in Sources */,
 				0476B1F92704CE3F0088EC57 /*  Color+Ext..swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

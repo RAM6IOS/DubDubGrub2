@@ -14,13 +14,9 @@ struct LocationDerail: View {
             GridItem(.flexible()),]
     var body: some View {
         VStack{
-            Image("default-banner-asset")
-                .resizable()
-                .scaledToFit()
+            IamgeName(imagename: "default-banner-asset")
             HStack{
-                Label("123 Man Stit" , systemImage:"mappin.and.ellipse")
-                    .font(.caption)
-                    .foregroundColor(.secondary)
+                AdresView(adres: "123 Man Stit" )
                     
                     
                 Spacer()
@@ -95,7 +91,7 @@ struct LocationDerail: View {
         }
         .navigationTitle("Chipole")
        .navigationBarTitleDisplayMode(.inline)
-       .navigationBarBackButtonHidden(true)
+       //.navigationBarBackButtonHidden(true)
        .navigationBarItems(
                                    
                                    
@@ -119,7 +115,7 @@ struct LocationDerail_Previews: PreviewProvider {
 }
 
 
-            struct locationedView: View {
+   struct locationedView: View {
                 var color: Color
                 var ImageName : String
                 var body: some View {
@@ -144,7 +140,7 @@ struct LocationDerail_Previews: PreviewProvider {
                 var name: String
                 var body: some View {
                     VStack{
-                    Image("default-avatar")
+                    Image("default-square-asset")
                         .resizable()
                         .scaledToFit()
                         .frame(width: size, height: size )
@@ -156,3 +152,21 @@ struct LocationDerail_Previews: PreviewProvider {
                     }
                 }
             }
+
+struct IamgeName: View {
+    var imagename :String
+    var body: some View {
+        Image(imagename)
+            .resizable()
+            .scaledToFit()
+    }
+}
+
+struct AdresView: View {
+    var adres:String
+    var body: some View {
+        Label(adres, systemImage:"mappin.and.ellipse")
+            .font(.caption)
+            .foregroundColor(.secondary)
+    }
+}

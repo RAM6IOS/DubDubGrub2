@@ -15,33 +15,21 @@ struct ProfileView: View {
     @State private var CompanyName: String = ""
     @State private var bio: String = ""
     var body: some View {
-        NavigationView{
+        
             VStack{
                 ZStack{
-                    RoundedRectangle(cornerRadius: 25, style: .continuous)
-                        .frame( height: 130)
-                        .foregroundColor(Color(.secondarySystemBackground))
+                    ColorBackground()
                     
                     HStack( spacing: 20){
                         ZStack{
-                        Image("default-avatar")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 80, height: 80 )
-                            .clipShape(Circle())
-                            Image(systemName: "square.and.pencil")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 14, height: 14)
-                                .foregroundColor(.white)
-                                .offset(y:30)
+                            AvaterView(size: 80)
+                        
+                            EidetImage()
                             
                         }
                         VStack(alignment: .leading ){
                             TextField("FirstName" , text: $FirsName)
-                                .font(.system(size: 32 , weight: .bold))
-                                .lineLimit(1)
-                                .minimumScaleFactor(0.75)
+                                .profilNameStyle()
                             TextField("LastName" , text: $LastName)
                                 .font(.system(size: 32 , weight: .bold))
                                 .lineLimit(1)
@@ -63,29 +51,7 @@ struct ProfileView: View {
                 }
                 .padding(.horizontal)
                 
-                HStack{
-                    Text("Bon:\(100 - bio.count) characters remain")
-                        .foregroundColor(.secondary)
-                        
-                    Spacer()
-                    Button{
-                        
-                    } label: {
-                        HStack{
-                        Image(systemName: "mappin.and.ellipse")
-                        Text("Check Out")
-                                .bold()
-                        }
-                        .padding(10)
-                        .padding(.horizontal,5)
-                        .foregroundColor(.white)
-                        .background(Color.red)
-                        .cornerRadius(10)
-                        
-                        
-                    }
-                    .padding()
-                }
+                CharactersRemsinView(caruter: bio.count)
                 VStack{
                     TextEditor(text: $bio)
                         .frame( height: 100)
@@ -102,20 +68,14 @@ struct ProfileView: View {
                 Button{
                     
                 } label: {
-                    Text("Save Profile")
-                        .bold()
-                        .font(.title3)
-                        .frame(width: 250, height: 50 )
-                        .background(Color.brandPrimary)
-                        .foregroundColor(.white)
-                        
+                    DubButoen(nameButens: "Save Profle")
                 }
                 
                 .cornerRadius(10)
             }
             .navigationTitle("Profile")
            
-        }
+        
         
     }
 }
@@ -124,5 +84,68 @@ struct ProfileView_Previews: PreviewProvider {
     static var previews: some View {
         ProfileView()
             .preferredColorScheme(.dark)
+    }
+}
+
+
+
+
+struct ColorBackground: View {
+    var body: some View {
+        RoundedRectangle(cornerRadius: 25, style: .continuous)
+            .frame( height: 130)
+            .foregroundColor(Color(.secondarySystemBackground))
+    }
+}
+
+struct EidetImage: View {
+    var body: some View {
+        Image(systemName: "square.and.pencil")
+            .resizable()
+            .scaledToFit()
+            .frame(width: 14, height: 14)
+            .foregroundColor(.white)
+            .offset(y:30)
+    }
+}
+
+struct CharactersRemsinView: View {
+    var caruter: Int
+    
+    var body: some View {
+        HStack{
+            Text("Bio: ")
+                .font(.caption)
+                .foregroundColor(.secondary)
+            +
+            Text("\(100 - caruter)")
+                .bold()
+                .font(.caption)
+                .foregroundColor(caruter <= 100 ? .brandPrimary : Color(.systemPink))
+            +
+            Text("Caracter Remain ")
+                .font(.caption)
+                .foregroundColor(.secondary)
+            
+            Spacer()
+            Button{
+                
+            } label: {
+                HStack{
+                    Image(systemName: "mappin.and.ellipse")
+                    Text("Check Out")
+                        .bold()
+                }
+                .padding(10)
+                .padding(.horizontal,5)
+                .foregroundColor(.white)
+                .background(Color.red)
+                .cornerRadius(10)
+                
+                
+            }
+            .padding()
+        }
+        .padding(.horizontal)
     }
 }
